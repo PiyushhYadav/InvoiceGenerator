@@ -1,0 +1,303 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Thin subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+/* Custom input focus states matching reference */
+input:focus, select:focus, textarea:focus {
+  outline: none !important;
+  border-color: #94a3b8 !important;
+  box-shadow: 0 0 0 1px #94a3b8 !important;
+}
+
+/* Ensure line item table rows are spacious and never cut off vertically */
+table td {
+  vertical-align: top;
+}
+
+/* Natural flexible growth for form textareas, never show manual resize grip */
+textarea {
+  min-height: 36px;
+  resize: none !important;
+}
+
+/* Remove number input spinners/stepper arrows completely */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+
+input[type=number] {
+  -moz-appearance: textfield !important;
+}
+
+/* Remove datalist dropdown chevron icon */
+input::-webkit-calendar-picker-indicator {
+  display: none !important;
+  -webkit-appearance: none !important;
+  opacity: 0 !important;
+}
+
+/* ==========================================================================
+   Dark Mode Theme
+   ========================================================================== */
+
+html.dark {
+  color-scheme: dark;
+}
+
+html.dark body {
+  background-color: #121214 !important;
+  color: #e4e4e7 !important;
+}
+
+/* Main Backgrounds & Containers */
+html.dark .bg-\[\#fbfbf9\] {
+  background-color: #121214 !important;
+}
+
+html.dark .bg-\[\#f5f4ef\] {
+  background-color: #18181b !important;
+}
+
+html.dark .bg-\[\#f0eee6\] {
+  background-color: #27272a !important;
+  color: #f4f4f5 !important;
+}
+
+html.dark .bg-\[\#eae8e0\] {
+  background-color: #27272a !important;
+}
+
+html.dark .bg-\[\#e3eae1\] {
+  background-color: #1a3324 !important;
+  color: #86efac !important;
+}
+
+html.dark .bg-white {
+  background-color: #1e1e24 !important;
+}
+
+html.dark .bg-gray-50,
+html.dark .bg-gray-50\/50,
+html.dark .bg-gray-50\/40 {
+  background-color: #27272e !important;
+}
+
+html.dark .bg-gray-100 {
+  background-color: #27272e !important;
+}
+
+/* Borders */
+html.dark .border-\[\#e8e6df\],
+html.dark .border-\[\#e8e6df\]\/70,
+html.dark .border-gray-200,
+html.dark .border-gray-200\/60,
+html.dark .border-gray-200\/80,
+html.dark .border-gray-200\/90,
+html.dark .border-gray-300,
+html.dark .border-gray-100 {
+  border-color: #2e2e36 !important;
+}
+
+html.dark .divide-gray-100 > :not([hidden]) ~ :not([hidden]),
+html.dark .divide-gray-200 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #2e2e36 !important;
+}
+
+/* Typography */
+html.dark .text-gray-900 {
+  color: #f4f4f5 !important;
+}
+
+html.dark .text-gray-800 {
+  color: #e4e4e7 !important;
+}
+
+html.dark .text-gray-700 {
+  color: #d4d4d8 !important;
+}
+
+html.dark .text-gray-600 {
+  color: #a1a1aa !important;
+}
+
+html.dark .text-gray-500 {
+  color: #8e8e93 !important;
+}
+
+html.dark .text-gray-400 {
+  color: #71717a !important;
+}
+
+html.dark .hover\:text-gray-900:hover,
+html.dark .hover\:text-gray-800:hover,
+html.dark .hover\:text-black:hover {
+  color: #ffffff !important;
+}
+
+html.dark .hover\:bg-\[\#eae8e0\]:hover {
+  background-color: #27272a !important;
+}
+
+html.dark .hover\:bg-gray-50\/40:hover,
+html.dark .hover\:bg-gray-50:hover,
+html.dark .hover\:bg-gray-100:hover {
+  background-color: #26262d !important;
+}
+
+/* Form Controls */
+html.dark input,
+html.dark select,
+html.dark textarea {
+  background-color: #202026 !important;
+  color: #f4f4f5 !important;
+  border-color: #383842 !important;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color: #71717a !important;
+}
+
+html.dark input:focus,
+html.dark select:focus,
+html.dark textarea:focus {
+  outline: none !important;
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 1px #3b82f6 !important;
+}
+
+/* Notification & Status Banners */
+html.dark .bg-\[\#f0f7f1\],
+html.dark .bg-green-50 {
+  background-color: #143021 !important;
+  border-color: #1f5135 !important;
+  color: #a7f3d0 !important;
+}
+
+html.dark .bg-amber-50 {
+  background-color: #33210b !important;
+  border-color: #78350f !important;
+  color: #fde68a !important;
+}
+
+html.dark .bg-red-50 {
+  background-color: #351414 !important;
+  border-color: #7f1d1d !important;
+  color: #fca5a5 !important;
+}
+
+/* Validation Text Colors in Dark Mode */
+html.dark .text-red-600,
+html.dark .text-red-500 {
+  color: #fca5a5 !important;
+}
+
+html.dark .text-amber-700,
+html.dark .text-amber-600 {
+  color: #fde047 !important;
+}
+
+html.dark .text-\[\#2e7d32\] {
+  color: #86efac !important;
+}
+
+/* Final Amount Banner in Dark Mode */
+html.dark .bg-\[\#edf5ee\] {
+  background-color: #143223 !important;
+  border-color: #225b3a !important;
+}
+
+html.dark .bg-\[\#edf5ee\] span {
+  color: #4ade80 !important;
+}
+
+/* Gray opacity variants in Dark Mode */
+html.dark [class*="bg-gray-50"] {
+  background-color: #25252d !important;
+}
+
+html.dark [class*="bg-gray-100"] {
+  background-color: #272730 !important;
+}
+
+html.dark div[class*="bg-gray-50\/70"] {
+  background-color: #1e1e24 !important;
+  border-color: #2e2e36 !important;
+}
+
+html.dark p[class*="bg-gray-50"] {
+  background-color: #25252d !important;
+  border-color: #353540 !important;
+  color: #e4e4e7 !important;
+}
+
+/* Table Header in Dark Mode */
+html.dark thead tr {
+  background-color: #25252d !important;
+  border-color: #2e2e36 !important;
+}
+
+html.dark thead th {
+  color: #d4d4d8 !important;
+}
+
+/* Input Focus in Dark Mode */
+html.dark .focus\:bg-white:focus {
+  background-color: #25252d !important;
+}
+
+html.dark select,
+html.dark option {
+  background-color: #202026 !important;
+  color: #f4f4f5 !important;
+}
+
+/* Emerald accents in Dark Mode */
+html.dark .bg-emerald-50 {
+  background-color: #132e1f !important;
+  border-color: #1e5235 !important;
+  color: #86efac !important;
+}
+
+html.dark .hover\:bg-emerald-50:hover,
+html.dark .hover\:bg-emerald-100:hover {
+  background-color: #193d29 !important;
+}
+
+/* Modals */
+html.dark .fixed.inset-0.bg-black\/40 {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+/* Scrollbars in Dark Mode */
+html.dark ::-webkit-scrollbar-track {
+  background: #18181b !important;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #3f3f46 !important;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #52525b !important;
+}

@@ -1,0 +1,30 @@
+# Node dependencies
+frontend/node_modules/
+frontend/.npm/
+*.timestamp-*.mjs
+
+# Python cache and environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+env/
+venv/
+.venv/
+
+# Logs
+*.log
+server.log
+crash.log
+test.log
+test_pw.log
+
+# OS & Desktop files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.lnk
+
+# Database backups & local temporary exports
+data/*.bak*
+output/
