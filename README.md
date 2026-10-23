@@ -1,6 +1,6 @@
-# Piyush Welding & Fabrication — Invoice Automation System
+# Invoice Automation System
 
-An offline-first, professional invoice generation application built specifically for **Piyush Welding & Fabrication**. It generates Microsoft Word (`.docx`) invoices by directly populating the business's official invoice template (`Bill_PW_004.docx`), preserving all fonts, company branding, table borders, and signature stamps with 100% fidelity.
+An offline-first, professional invoice generation application. It generates Microsoft Word (`.docx`) invoices by directly populating the business's official invoice template (`Bill_PW_004.docx`), preserving all fonts, company branding, table borders, and signature stamps with 100% fidelity.
 
 ---
 
